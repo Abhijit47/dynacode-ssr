@@ -13,6 +13,7 @@ import 'animate.css';
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'aos/dist/aos.css';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
@@ -21,6 +22,10 @@ import 'swiper/css/pagination';
 import './app.css';
 import './assets/css/main.css';
 import './assets/css/responsive.css';
+import Footer from './components/shared/footer';
+import Navbar from './components/shared/navbar';
+import Sidebar from './components/shared/sidebar';
+import AosProvider from './providers/aos-provider';
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -45,9 +50,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <Navbar />
+        <Sidebar />
         {children}
         <ScrollRestoration />
         <Scripts />
+        <Footer />
         <script
           src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js'
           integrity='sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI'
@@ -66,7 +74,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <AosProvider>
+      <Outlet />
+    </AosProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
