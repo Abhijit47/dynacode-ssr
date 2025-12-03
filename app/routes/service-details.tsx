@@ -1,11 +1,10 @@
-import ComingSoon from '~/components/coming-soon';
-import type { Route } from './+types/home';
+import type { Route } from './+types/service-details';
 
 export function meta({}: Route.MetaArgs) {
   return [
     {
       title:
-        'Home | DynaCode - Web Development | SEO | Digital Marketing Agency | Graphic Design',
+        'Service Details | DynaCode - Web Development | SEO | Digital Marketing Agency | Graphic Design',
     },
     {
       name: 'description',
@@ -23,6 +22,6 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <ComingSoon />;
+export default function ServiceDetails() {
+  return <div>ServiceDetails</div>;
 }

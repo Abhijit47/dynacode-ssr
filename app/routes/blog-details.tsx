@@ -1,11 +1,11 @@
-import ComingSoon from '~/components/coming-soon';
-import type { Route } from './+types/home';
+import { useParams } from 'react-router';
+import type { Route } from './+types/blog-details';
 
 export function meta({}: Route.MetaArgs) {
   return [
     {
       title:
-        'Home | DynaCode - Web Development | SEO | Digital Marketing Agency | Graphic Design',
+        'Blog Details | DynaCode - Web Development | SEO | Digital Marketing Agency | Graphic Design',
     },
     {
       name: 'description',
@@ -23,6 +23,12 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <ComingSoon />;
+export default function BlogDetails() {
+  const blogId = useParams();
+  return (
+    <div>
+      BlogDetails
+      {blogId.bid}
+    </div>
+  );
 }
