@@ -3,8 +3,10 @@ import { useEffect } from 'react';
 
 export default function AosProvider({
   children,
+  isNavigating,
 }: {
   children: React.ReactNode;
+  isNavigating: boolean;
 }) {
   useEffect(() => {
     AOS.init({
@@ -26,6 +28,10 @@ export default function AosProvider({
       // mirror: false, // whether elements should animate out while scrolling past them
       // anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
     });
+
+    // if (isNavigating) {
+    //   AOS.refresh();
+    // }
   }, []);
 
   return <>{children}</>;

@@ -1,4 +1,16 @@
 import ComingSoon from '~/components/coming-soon';
+import AboutSection from '~/components/ui/about-section';
+import BannerHome from '~/components/ui/banner-home';
+import BlogSection from '~/components/ui/blog-section';
+import CtaSection from '~/components/ui/cta-section';
+import ModalVideoSection from '~/components/ui/modal-video-section';
+import PartnersipSection from '~/components/ui/partnerships';
+import PortfolioSection from '~/components/ui/portfolio-section';
+import ProcessSection from '~/components/ui/process-section';
+import ServiceSection from '~/components/ui/services-section';
+import TestimonialSection from '~/components/ui/testimonial-section';
+import WhyChooseUsSection from '~/components/ui/why-choose-us-section';
+import { ModalVideoProvider } from '~/contexts/modal-video-provider';
 import type { Route } from './+types/home';
 
 export function meta({}: Route.MetaArgs) {
@@ -23,10 +35,44 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+export function headers() {
+  return {
+    'X-Stretchy-Pants': 'its for fun',
+    'Cache-Control': 'max-age=300, s-maxage=3600',
+  };
+}
+
+export const handle = {
+  its: 'all yours',
+};
+
+// export function links() {
+//   return [
+//     {
+//       rel: 'icon',
+//       href: '/favicon.png',
+//       type: 'image/png',
+//     },
+//     {
+//       rel: 'stylesheet',
+//       href: 'https://example.com/some/styles.css',
+//     },
+//     {
+//       rel: 'preload',
+//       href: '/images/banner.jpg',
+//       as: 'image',
+//     },
+//   ];
+// }
+
+export function HydrateFallback() {
+  return <p>Loading Game...</p>;
+}
+
+export default function Home({}: Route.ComponentProps) {
   return (
     <>
-      <div
+      {/* <div
         data-aos='fade-up'
         data-aos-offset='200'
         data-aos-delay='50'
@@ -35,9 +81,24 @@ export default function Home() {
         // data-aos-mirror='true'
         // data-aos-once='false'
         // data-aos-anchor-placement='top-center'
-      >
+        >
         WOW
-      </div>
+        </div> */}
+      <ModalVideoProvider>
+        <BannerHome />
+        <ModalVideoSection />
+      </ModalVideoProvider>
+      <PartnersipSection />
+      <AboutSection />
+      <ServiceSection />
+      {/* bundle issues */}
+      {/* <AchievementSection /> */}
+      <ProcessSection />
+      <WhyChooseUsSection />
+      <CtaSection />
+      <PortfolioSection />
+      <TestimonialSection />
+      <BlogSection />
       <ComingSoon />
     </>
   );

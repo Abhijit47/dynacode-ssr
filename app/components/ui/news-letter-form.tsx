@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const NewsletterForm = () => {
+function NewsletterForm() {
   const [email, setEmail] = useState('');
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -86,6 +86,6 @@ const NewsletterForm = () => {
       </div>
     </div>
   );
-};
+}
 
 export default NewsletterForm;
