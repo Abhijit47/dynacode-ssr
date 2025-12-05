@@ -4,7 +4,7 @@ import { companyLogos } from '~/constants';
 
 const isDev = import.meta.env.DEV;
 
-function PartnersipSection() {
+export default function PartnersipSection() {
   return (
     <>
       <div className='section compact-top-zero-bottom'>
@@ -56,5 +56,3 @@ function PartnersipSection() {
     </>
   );
 }
-
-export default PartnersipSection;

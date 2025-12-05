@@ -1,6 +1,6 @@
 type PortfolioCardProps = typeof import('~/constants').portfolios[0];
 
-function PortfolioCard({
+export default function PortfolioCard({
   logo,
   image,
   category,
@@ -32,5 +32,3 @@ function PortfolioCard({
     </>
   );
 }
-
-export default PortfolioCard;

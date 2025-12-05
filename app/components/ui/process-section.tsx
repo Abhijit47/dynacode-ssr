@@ -1,6 +1,6 @@
 import useAnimateOnScroll from '~/hooks/useAnimateOnScroll';
 
-function ProcessSection() {
+export default function ProcessSection() {
   useAnimateOnScroll();
   return (
     <>
@@ -79,5 +79,3 @@ function ProcessSection() {
     </>
   );
 }
-
-export default ProcessSection;

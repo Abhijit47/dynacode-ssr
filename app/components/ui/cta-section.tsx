@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import useAnimateOnScroll from '~/hooks/useAnimateOnScroll';
-function CtaSection() {
+
+export default function CtaSection() {
   useAnimateOnScroll();
 
   return (
@@ -32,5 +33,3 @@ function CtaSection() {
     </>
   );
 }
-
-export default CtaSection;

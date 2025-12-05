@@ -1,5 +1,6 @@
 import useAnimateOnScroll from '~/hooks/useAnimateOnScroll';
-function WhyChooseUsSection() {
+
+export default function WhyChooseUsSection() {
   useAnimateOnScroll();
 
   return (
@@ -113,5 +114,3 @@ function WhyChooseUsSection() {
     </>
   );
 }
-
-export default WhyChooseUsSection;

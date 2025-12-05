@@ -1,6 +1,6 @@
 type BlogCardProps = typeof import('~/constants').blogs[number];
 
-function BlogCard({
+export default function BlogCard({
   image,
   title,
   content,
@@ -33,5 +33,3 @@ function BlogCard({
     </>
   );
 }
-
-export default BlogCard;

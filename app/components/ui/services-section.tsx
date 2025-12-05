@@ -1,7 +1,7 @@
 import { services } from '~/constants';
 import useAnimateOnScroll from '~/hooks/useAnimateOnScroll';
 import ServiceCard from './service-card';
-function ServiceSection() {
+export default function ServiceSection() {
   useAnimateOnScroll();
 
   return (
@@ -40,5 +40,3 @@ function ServiceSection() {
     </>
   );
 }
-
-export default ServiceSection;

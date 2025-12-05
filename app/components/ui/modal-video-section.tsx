@@ -1,6 +1,6 @@
 import { useModalVideo } from '~/contexts/modal-video-provider';
 
-function ModalVideoSection() {
+export default function ModalVideoSection() {
   const { isOpen, videoUrl, closeModal } = useModalVideo();
 
   if (!isOpen) return null;
@@ -26,5 +26,3 @@ function ModalVideoSection() {
     </div>
   );
 }
-
-export default ModalVideoSection;

@@ -1,7 +1,7 @@
 import { portfolios } from '~/constants';
 import PortfolioCard from './portfolio-card';
 
-function PortfolioSection() {
+export default function PortfolioSection() {
   return (
     <>
       <div className='section spacious-top'>
@@ -40,5 +40,3 @@ function PortfolioSection() {
     </>
   );
 }
-
-export default PortfolioSection;

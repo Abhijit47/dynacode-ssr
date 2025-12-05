@@ -2,7 +2,7 @@ type ServiceCardProps = typeof import('~/constants').services[0] & {
   highlight?: boolean;
 };
 
-function ServiceCard({
+export default function ServiceCard({
   icon,
   title,
   content,
@@ -31,5 +31,3 @@ function ServiceCard({
     </>
   );
 }
-
-export default ServiceCard;

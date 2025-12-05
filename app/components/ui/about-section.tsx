@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import useAnimateOnScroll from '~/hooks/useAnimateOnScroll';
 
-function AboutSection() {
+export default function AboutSection() {
   useAnimateOnScroll();
 
   return (
@@ -109,5 +109,3 @@ function AboutSection() {
     </>
   );
 }
-
-export default AboutSection;

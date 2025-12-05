@@ -1,6 +1,6 @@
 import { useModalVideo } from '~/contexts/modal-video-provider';
 
-function VideoButton({ videoUrl }: { videoUrl: string }) {
+export default function VideoButton({ videoUrl }: { videoUrl: string }) {
   const { openModal } = useModalVideo();
 
   return (
@@ -13,5 +13,3 @@ function VideoButton({ videoUrl }: { videoUrl: string }) {
     </button>
   );
 }
-
-export default VideoButton;

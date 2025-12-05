@@ -2,7 +2,7 @@ type TestimonialCardProps = typeof import('~/constants').testimonials[0] & {
   variant: 'box' | 'page-wide' | 'page-small';
   speed?: string;
 };
-function TestimonialCard({
+export default function TestimonialCard({
   image,
   name,
   designation,
@@ -48,5 +48,3 @@ function TestimonialCard({
     </div>
   );
 }
-
-export default TestimonialCard;

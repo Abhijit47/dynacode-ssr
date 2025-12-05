@@ -1,7 +1,7 @@
 import { blogs } from '~/constants';
 import BlogCard from './blog-card';
 
-function BlogSection() {
+export default function BlogSection() {
   return (
     <>
       <div className='section'>
@@ -39,5 +39,3 @@ function BlogSection() {
     </>
   );
 }
-
-export default BlogSection;

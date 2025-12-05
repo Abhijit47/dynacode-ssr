@@ -3,7 +3,7 @@ import { bannerTags } from '~/constants';
 import useAnimateOnScroll from '~/hooks/useAnimateOnScroll';
 import VideoButton from './video-button';
 
-function BannerHome() {
+export default function BannerHome() {
   useAnimateOnScroll();
 
   return (
@@ -129,5 +129,3 @@ function BannerHome() {
     </>
   );
 }
-
-export default BannerHome;

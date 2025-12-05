@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import { testimonials } from '~/constants';
 import TestimonialCard from './testimonial-card';
 
-function TestimonialSection() {
+export default function TestimonialSection() {
   return (
     <div className='section'>
       <div className='hero-container'>
@@ -72,5 +72,3 @@ function TestimonialSection() {
     </div>
   );
 }
-
-export default TestimonialSection;
