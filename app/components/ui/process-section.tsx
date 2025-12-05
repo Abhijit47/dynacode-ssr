@@ -30,9 +30,8 @@ function ProcessSection() {
                     <i className='fa-solid fa-people-arrows'></i>
                     <h3 className='secondary-accent'>Inital Consultation</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
+                      We listen to your needs and tailor our approach to ensure
+                      the best outcomes.
                     </p>
                   </div>
                 </div>
@@ -49,9 +48,8 @@ function ProcessSection() {
                     <i className='fa-solid fa-file-invoice'></i>
                     <h3 className='secondary-accent'>Market Research</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
+                      We analyze market trends to provide insights that drive
+                      your success.
                     </p>
                   </div>
                 </div>
@@ -68,9 +66,8 @@ function ProcessSection() {
                     <i className='fa-solid fa-computer'></i>
                     <h3 className='secondary-accent'>Strategy Development</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo.
+                      We create tailored strategies that align with your
+                      business goals and drive results.
                     </p>
                   </div>
                 </div>

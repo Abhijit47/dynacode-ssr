@@ -20,10 +20,10 @@ export default function AchievementSection() {
   const clientRef = useRef(null);
   const teamRef = useRef(null);
 
-  const { suffix: expSuffix } = useCounterOnScroll(expRef, 20, 2000);
-  const { suffix: projSuffix } = useCounterOnScroll(projRef, 173, 2000);
-  const { suffix: clientSuffix } = useCounterOnScroll(clientRef, 1500, 2000);
-  const { suffix: teamSuffix } = useCounterOnScroll(teamRef, 52, 2000);
+  const { suffix: expSuffix } = useCounterOnScroll(expRef, 5, 2000);
+  const { suffix: projSuffix } = useCounterOnScroll(projRef, 25, 2000);
+  const { suffix: clientSuffix } = useCounterOnScroll(clientRef, 15, 2000);
+  const { suffix: teamSuffix } = useCounterOnScroll(teamRef, 10, 2000);
 
   return (
     <div className='section py-0'>

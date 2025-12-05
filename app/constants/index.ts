@@ -27,32 +27,32 @@ export const bannerTags = [
 
 export const companyLogos = [
   {
-    id: 1,
-    logo: '/assets/images/partner-4-65f90f1a4e273.webp',
+    id: crypto.randomUUID(),
+    logo: '/assets/library/clerk-icon-light.svg',
   },
   {
-    id: 2,
-    logo: '/assets/images/partner-5-65f90f1ae5cd3.webp',
+    id: crypto.randomUUID(),
+    logo: '/assets/library/appwrite.svg',
   },
   {
-    id: 3,
-    logo: '/assets/images/partner-6-65f90f1b3c463.webp',
+    id: crypto.randomUUID(),
+    logo: '/assets/library/anthropic_white.svg',
   },
   {
-    id: 4,
-    logo: '/assets/images/partner-7-65f90f1bc7da0.webp',
+    id: crypto.randomUUID(),
+    logo: '/assets/library/apidog.svg',
   },
   {
-    id: 5,
-    logo: '/assets/images/partner-8-65f90f1847992.webp',
+    id: crypto.randomUUID(),
+    logo: '/assets/library/better-auth_light.svg',
   },
   {
-    id: 6,
-    logo: '/assets/images/partner-9-65f90f351af88.webp',
+    id: crypto.randomUUID(),
+    logo: '/assets/library/chartjs.svg',
   },
   {
-    id: 7,
-    logo: '/assets/images/partner-10-65f90f3519911.webp',
+    id: crypto.randomUUID(),
+    logo: '/assets/library/convex.svg',
   },
 ];
 
@@ -61,48 +61,42 @@ export const services = [
     id: 1,
     icon: 'fa-solid fa-file',
     title: 'Content Marketing',
-    content:
-      'Rhoncus magna curabitur pretium non arcu magnis vestibulum cursus. Maximus gravida orci libero tristique non',
+    content: 'Crafting strategies to enhance brand visibility and engagement.',
     link: '#',
   },
   {
     id: 2,
     icon: 'fa-solid fa-file',
     title: 'On-Page SEO',
-    content:
-      'Rhoncus magna curabitur pretium non arcu magnis vestibulum cursus. Maximus gravida orci libero tristique non',
+    content: 'Optimizing website elements to improve search engine rankings.',
     link: '#',
   },
   {
     id: 3,
     icon: 'fa-solid fa-magnifying-glass',
     title: 'Off-Page SEO',
-    content:
-      'Rhoncus magna curabitur pretium non arcu magnis vestibulum cursus. Maximus gravida orci libero tristique non',
+    content: 'Building backlinks and authority to boost online presence.',
     link: '#',
   },
   {
     id: 4,
     icon: 'fa-solid fa-share-nodes',
     title: 'Social Media Marketing',
-    content:
-      'Rhoncus magna curabitur pretium non arcu magnis vestibulum cursus. Maximus gravida orci libero tristique non',
+    content: 'Engaging audiences through targeted social media campaigns.',
     link: '#',
   },
   {
     id: 5,
     icon: 'fa-solid fa-address-card',
     title: 'Analytic Reporting',
-    content:
-      'Rhoncus magna curabitur pretium non arcu magnis vestibulum cursus. Maximus gravida orci libero tristique non',
+    content: 'Analyzing data to drive informed marketing decisions.',
     link: '#',
   },
   {
     id: 6,
     icon: 'fa-solid fa-people-group',
     title: 'Influencer Marketing',
-    content:
-      'Rhoncus magna curabitur pretium non arcu magnis vestibulum cursus. Maximus gravida orci libero tristique non',
+    content: 'Leveraging influencers to reach wider audiences effectively.',
     link: '#',
   },
 ];
@@ -187,9 +181,9 @@ export const testimonials = [
     id: 1,
     image: '/assets/images/Team1.jpg',
     name: 'Jhon Doe',
-    designation: 'Client',
+    designation: 'CEO, Tech Startup',
     content:
-      'Pellentesque primis litora malesuada, torquent venenatis commodo. Egestas taciti in posuere, pellentesque nunc nostra ornare penatibus. Fringilla facilisis parturient sit dignissim phasellus cras magnis.',
+      'Their SEO strategy increased our organic traffic by 150% in just 6 months. Exceptional results and professional team.',
     speed: 'animated-fast',
     size: 'wide',
   },
@@ -197,9 +191,9 @@ export const testimonials = [
     id: 2,
     image: '/assets/images/Team2.jpg',
     name: 'Sarah Smith',
-    designation: 'Client',
+    designation: 'Marketing Director',
     content:
-      'Pellentesque primis litora malesuada, torquent venenatis commodo. Egestas taciti in posuere, pellentesque nunc nostra ornare penatibus. Fringilla facilisis parturient sit dignissim phasellus cras magnis.',
+      "Best digital marketing partner we've worked with. Highly recommend their services.",
     speed: '',
     size: 'small',
   },
@@ -207,9 +201,9 @@ export const testimonials = [
     id: 3,
     image: '/assets/images/Team3.jpg',
     name: 'Peter Walk',
-    designation: 'Client',
+    designation: 'E-commerce Owner',
     content:
-      'Pellentesque primis litora malesuada, torquent venenatis commodo. Egestas taciti in posuere, pellentesque nunc nostra ornare penatibus. Fringilla facilisis parturient sit dignissim phasellus cras magnis.',
+      'Their content marketing strategy boosted our sales significantly. Great ROI.',
     speed: 'animated-slow',
     size: 'small',
   },
@@ -217,9 +211,9 @@ export const testimonials = [
     id: 4,
     image: '/assets/images/Team4.jpg',
     name: 'Joe Bloggs',
-    designation: 'Client',
+    designation: 'Founder, SaaS Company',
     content:
-      'Pellentesque primis litora malesuada, torquent venenatis commodo. Egestas taciti in posuere, pellentesque nunc nostra ornare penatibus. Fringilla facilisis parturient sit dignissim phasellus cras magnis.',
+      'Professional, responsive, and results-driven. They transformed our online presence completely.',
     speed: 'animated-fast',
     size: 'wide',
   },
@@ -227,9 +221,9 @@ export const testimonials = [
     id: 5,
     image: '/assets/images/Team5.webp',
     name: 'David Willson',
-    designation: 'Client',
+    designation: 'Brand Manager',
     content:
-      'Pellentesque primis litora malesuada, torquent venenatis commodo. Egestas taciti in posuere, pellentesque nunc nostra ornare penatibus. Fringilla facilisis parturient sit dignissim phasellus cras magnis.',
+      'Excellent influencer marketing campaigns that reached our target audience perfectly.',
     speed: '',
     size: 'wide',
   },
@@ -237,9 +231,9 @@ export const testimonials = [
     id: 6,
     image: '/assets/images/Team7.webp',
     name: 'Marry Adams',
-    designation: 'Client',
+    designation: 'Agency Director',
     content:
-      'Pellentesque primis litora malesuada, torquent venenatis commodo. Egestas taciti in posuere, pellentesque nunc nostra ornare penatibus. Fringilla facilisis parturient sit dignissim phasellus cras magnis.',
+      'Their analytics reporting provides clear insights. Data-driven approach sets them apart.',
     speed: 'animated-slow',
     size: 'small',
   },

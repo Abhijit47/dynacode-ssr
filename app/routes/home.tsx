@@ -1,5 +1,6 @@
 import ComingSoon from '~/components/coming-soon';
 import AboutSection from '~/components/ui/about-section';
+import AchievementSection from '~/components/ui/achievement-section.client';
 import BannerHome from '~/components/ui/banner-home';
 import BlogSection from '~/components/ui/blog-section';
 import CtaSection from '~/components/ui/cta-section';
@@ -69,6 +70,8 @@ export function HydrateFallback() {
   return <p>Loading Game...</p>;
 }
 
+const isDev = import.meta.env.DEV;
+
 export default function Home({}: Route.ComponentProps) {
   return (
     <>
@@ -92,14 +95,14 @@ export default function Home({}: Route.ComponentProps) {
       <AboutSection />
       <ServiceSection />
       {/* bundle issues */}
-      {/* <AchievementSection /> */}
+      <AchievementSection />
       <ProcessSection />
       <WhyChooseUsSection />
       <CtaSection />
-      <PortfolioSection />
+      {isDev ? <PortfolioSection /> : null}
       <TestimonialSection />
-      <BlogSection />
-      <ComingSoon />
+      {isDev ? <BlogSection /> : null}
+      {isDev ? <ComingSoon /> : null}
     </>
   );
 }

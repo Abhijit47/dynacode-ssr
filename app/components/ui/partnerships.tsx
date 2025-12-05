@@ -2,6 +2,8 @@ import { A11y, Autoplay, FreeMode } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { companyLogos } from '~/constants';
 
+const isDev = import.meta.env.DEV;
+
 function PartnersipSection() {
   return (
     <>
@@ -9,12 +11,16 @@ function PartnersipSection() {
         <div className='hero-container'>
           <div className='overflow-hidden'>
             <Swiper
-              autoplay={{
-                // delay: 2500,
-                disableOnInteraction: false,
-                waitForTransition: true,
-                pauseOnMouseEnter: true,
-              }}
+              autoplay={
+                isDev
+                  ? undefined
+                  : {
+                      // delay: 2500,
+                      disableOnInteraction: false,
+                      waitForTransition: true,
+                      pauseOnMouseEnter: true,
+                    }
+              }
               freeMode={true}
               modules={[A11y, Autoplay, FreeMode]}
               slidesPerView={5}
@@ -35,11 +41,11 @@ function PartnersipSection() {
               }}
               className='swiperPartner'>
               {companyLogos.map((item) => (
-                <SwiperSlide key={item.id}>
+                <SwiperSlide key={item.id} className={'ratio ratio-1x1'}>
                   <img
                     src={item.logo}
                     alt='Partner'
-                    className='img-fluid partner-img'
+                    className='img-fluid partner-img w-100 h-100 object-cover'
                   />
                 </SwiperSlide>
               ))}

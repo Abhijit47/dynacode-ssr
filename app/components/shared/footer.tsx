@@ -26,8 +26,8 @@ export default function Footer() {
                     />
                   </Link>
                   <p className='accent-color-2'>
-                    Quam lacus suspendisse faucibus interdum posuere lorem ipsum
-                    dolor sit. Vel quam elementum pulvinar etiam.
+                    Your trusted partner in digital innovation and web
+                    solutions.
                   </p>
                   <ul className='footer-list'>
                     <li>
@@ -96,9 +96,9 @@ export default function Footer() {
                 </div>
                 <div className='footer-cta'>
                   <h4 className='accent-color'>Work Days</h4>
-                  <p>
-                    Euismod elementum nisi quis eleifend quam adipiscing vitae
-                    proin sagittis.
+                  <p className='accent-color-2'>
+                    Available for consultations and support during business
+                    hours.
                   </p>
                   <div className='d-flex gspace-2'>
                     <i className='fa-solid accent-color-2 fa-clock'></i>

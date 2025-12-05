@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { testimonials } from '~/constants';
 import TestimonialCard from './testimonial-card';
 
@@ -18,17 +19,15 @@ function TestimonialSection() {
                   data-animate='animate__fadeInUp'>
                   Success Stories From Those Who Know Us Best
                 </h2>
-                <p>
-                  Vel inceptos euismod justo turpis platea eu. Est risus quam
-                  bibendum accumsan aliquam cubilia. Dolor ultrices imperdiet
-                  cursus pretium platea. Amagna ligula sem, porttitor imperdiet
-                  mi iaculis rutrum. Faucibus lorem rhoncus justo congue
-                  bibendum sagittis leo fermentum.
+                <p className=''>
+                  Discover why our clients trust us to deliver exceptional
+                  results. Their success is our success, and we're committed to
+                  exceeding expectations.
                 </p>
                 <div>
-                  <a href='#' className='btn btn-accent'>
+                  <Link to='#' className='btn btn-accent'>
                     View More
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='testimonial-image-wrapper'>
@@ -45,10 +44,7 @@ function TestimonialSection() {
                   data-animate='animate__zoomIn'>
                   <span className='rating-count'>99%</span>
                   <h5 className='accent-color'>Satisfied Client</h5>
-                  <p>
-                    Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                    dapibus leo.
-                  </p>
+                  <p>Real feedback from our valued clients</p>
                 </div>
               </div>
             </div>

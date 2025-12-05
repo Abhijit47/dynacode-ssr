@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import useAnimateOnScroll from '~/hooks/useAnimateOnScroll';
 function CtaSection() {
   useAnimateOnScroll();
@@ -15,14 +16,13 @@ function CtaSection() {
                   Unlock Your Potential, Reach Out and Transform Your Business!
                 </h2>
                 <p>
-                  Commodo facilisis egestas maximus volutpat iaculis maecenas
-                  augue tortor aptent. Efficitur interdum laoreet ullamcorper
-                  dis velit purus praesent conubia magna.
+                  Elevate your business with our innovative solutions tailored
+                  to your needs.
                 </p>
                 <div>
-                  <a href='./contact' className='btn btn-secondary-accent'>
+                  <Link to='/contact-us' className='btn btn-secondary-accent'>
                     Contact Us
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

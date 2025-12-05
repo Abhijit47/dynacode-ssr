@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import useAnimateOnScroll from '~/hooks/useAnimateOnScroll';
 
 function AboutSection() {
@@ -17,18 +18,20 @@ function AboutSection() {
                 <h2
                   className='animate-box animated animate__animated'
                   data-animate='animate__fadeInUp'>
-                  Transforming Businesses with Strategic Marketing
+                  We Transform Your Business Through Strategic Marketing
+                  Excellence
                 </h2>
-                <p>
-                  Massa habitant accumsan at hendrerit blandit tellus litora
-                  euismod justo. Pretium praesent pellentesque enim rhoncus
-                  laoreet natoque etiam pharetra. Purus primis pharetra maecenas
-                  a nunc feugiat accumsan.
+                <p
+                  className='animate-box animated animate__animated'
+                  data-animate='animate__fadeInUp'>
+                  We combine strategic insights with creative excellence to
+                  deliver marketing solutions that drive measurable results and
+                  sustainable growth for your business.
                 </p>
                 <div>
-                  <a href='#' className='btn btn-accent'>
+                  <Link to='#' className='btn btn-accent'>
                     Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='about-image-wrapper'>
@@ -68,9 +71,8 @@ function AboutSection() {
                     <div className='d-flex flex-column gspace-2'>
                       <h3 className='secondary-accent'>Our Philosophy</h3>
                       <p className='secondary-accent'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                        dapibus leo.
+                        We believe in innovative solutions that empower
+                        businesses to thrive in a competitive landscape.
                       </p>
                     </div>
                   </div>
@@ -82,9 +84,9 @@ function AboutSection() {
                   data-animate='animate__fadeInUp'>
                   <h3 className='secondary-accent'>Our Vision</h3>
                   <p className='secondary-accent'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
+                    Our vision is to lead the industry by providing innovative
+                    marketing solutions that inspire growth and success for our
+                    clients.
                   </p>
                 </div>
               </div>
@@ -94,9 +96,9 @@ function AboutSection() {
                   data-animate='animate__fadeInUp'>
                   <h3 className='secondary-accent'>Our Mission</h3>
                   <p className='secondary-accent'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
+                    Our mission is to empower businesses with innovative
+                    marketing strategies that drive growth and foster lasting
+                    relationships.
                   </p>
                 </div>
               </div>

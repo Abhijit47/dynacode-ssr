@@ -14,8 +14,9 @@ function BannerHome() {
             <h1
               className='font-family-1 animate-box animated animate__animated'
               data-animate='animate__fadeInUp'>
-              Transform Your{' '}
-              <span className='accent-color'>Online Business</span> With Aspire{' '}
+              Elevate Your{' '}
+              <span className='accent-color'>Digital Presence</span> & Scale
+              Faster With DynaCode{' '}
             </h1>
             <div className='banner-client-container'>
               <div className='banner-client-rating'>
@@ -52,10 +53,9 @@ function BannerHome() {
               </div>
               <div className='banner-text-description'>
                 <p>
-                  Viverra vitae congue eu consequat ac. Tortor condimentum
-                  lacinia quis vel eros donec. Faucibus interdum posuere lorem
-                  ipsum. Lacus sed turpis tincidunt id aliquet risus. In aliquam
-                  sem fringilla ut morbi tincidunt augue interdum velit.
+                  Transform your business with our expert web solutions. We
+                  deliver scalable, high-performance applications tailored to
+                  your unique needs and goals.
                 </p>
               </div>
             </div>
@@ -81,31 +81,46 @@ function BannerHome() {
             </div>
             <div className='d-flex flex-column flex-sm-row gap-4 justify-content-between'>
               <div className='social-container'>
-                <a href='#' className='social-item primary-accent'>
+                <Link to='#' className='social-item primary-accent'>
                   <span className={'visually-hidden'}>fb</span>
                   <i className='fa-brands fa-facebook-f'></i>
-                </a>
-                <a href='#' className='social-item primary-accent'>
+                </Link>
+                <Link to='#' className='social-item primary-accent'>
                   <span className={'visually-hidden'}>twitter</span>
                   <i className='fa-brands fa-x-twitter'></i>
-                </a>
-                <a href='#' className='social-item primary-accent'>
+                </Link>
+                <Link to='#' className='social-item primary-accent'>
                   <span className={'visually-hidden'}>instagram</span>
                   <i className='fa-brands fa-instagram'></i>
-                </a>
-                <a href='#' className='social-item primary-accent'>
+                </Link>
+                <Link to='#' className='social-item primary-accent'>
                   <span className={'visually-hidden'}>pnterest</span>
                   <i className='fa-brands fa-pinterest'></i>
-                </a>
-                <a href='#' className='social-item primary-accent'>
+                </Link>
+                <Link to='#' className='social-item primary-accent'>
                   <span className={'visually-hidden'}>youtube</span>
                   <i className='fa-brands fa-youtube'></i>
-                </a>
+                </Link>
               </div>
               <div className='d-flex flex-row flex-wrap gap-4 justify-content-center text-center'>
-                <p>Proven Result</p>
-                <p>Experienced Team</p>
-                <p>Affordable Pricing</p>
+                <div className='result-item'>
+                  <h4 className='font-family-1 secondary-accent'>
+                    Proven Results
+                  </h4>
+                  <p className='m-0'>Delivering measurable success</p>
+                </div>
+                <div className='result-item'>
+                  <h4 className='font-family-1 secondary-accent'>
+                    Expert Team
+                  </h4>
+                  <p className='m-0'>Skilled professionals ready to help</p>
+                </div>
+                <div className='result-item'>
+                  <h4 className='font-family-1 secondary-accent'>
+                    Affordable Pricing
+                  </h4>
+                  <p className='m-0'>Quality solutions within your budget</p>
+                </div>
               </div>
             </div>
           </div>
