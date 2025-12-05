@@ -1,5 +1,6 @@
 import Odometer from 'odometer';
 import 'odometer/themes/odometer-theme-default.css';
+
 import { useEffect, useMemo } from 'react';
 
 export default function useCounterOnScroll(
@@ -42,8 +43,15 @@ export default function useCounterOnScroll(
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             // Odometer initialization
+            // const od = new Odometer({
+            //   el: element,
+            //   value: 0,
+            //   duration,
+            //   format,
+            //   theme: 'default',
+            // });
             const od = new Odometer({
-              el: element,
+              el: element as unknown as HTMLElement,
               value: 0,
               duration,
               format,

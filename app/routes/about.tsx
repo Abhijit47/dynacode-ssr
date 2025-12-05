@@ -1,3 +1,12 @@
+import AboutSection from '~/components/ui/about-section';
+import AchievementSection from '~/components/ui/achievement-section.client';
+import BannerInnerSection from '~/components/ui/banner-inner-section';
+import CtaSection from '~/components/ui/cta-section';
+import PartnersipSection from '~/components/ui/partnerships';
+import ProcessSection from '~/components/ui/process-section';
+import TeamSection from '~/components/ui/team-section';
+import TestimonialSection from '~/components/ui/testimonial-section';
+import WhyChooseUsSection from '~/components/ui/why-choose-us-section';
 import type { Route } from './+types/about';
 
 export function meta({}: Route.MetaArgs) {
@@ -23,5 +32,17 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function AboutPage() {
-  return <div>About</div>;
+  return (
+    <>
+      <BannerInnerSection title='About Us' currentPage='About Us' />
+      <PartnersipSection />
+      <AboutSection />
+      <AchievementSection />
+      <TeamSection />
+      <WhyChooseUsSection />
+      <CtaSection />
+      <ProcessSection />
+      <TestimonialSection />
+    </>
+  );
 }

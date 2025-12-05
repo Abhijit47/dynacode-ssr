@@ -1,7 +1,20 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+// import useCounterOnScroll from '~/hooks/useCounterOnScroll';
+
+// import 'odometer/themes/odometer-theme-default.css';
+// import Odometer from 'react-odometerjs';
 import useCounterOnScroll from '~/hooks/useCounterOnScroll';
 
 export default function AchievementSection() {
+  const [value, setValue] = useState(1234);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => setValue(4321), 2000);
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   const expRef = useRef(null);
   const projRef = useRef(null);
   const clientRef = useRef(null);
@@ -11,13 +24,6 @@ export default function AchievementSection() {
   const { suffix: projSuffix } = useCounterOnScroll(projRef, 173, 2000);
   const { suffix: clientSuffix } = useCounterOnScroll(clientRef, 1500, 2000);
   const { suffix: teamSuffix } = useCounterOnScroll(teamRef, 52, 2000);
-
-  if (typeof window === undefined) {
-    console.log('CSR only - AchievementSection', typeof window);
-    return null;
-  }
-
-  const a = '2';
 
   return (
     <div className='section py-0'>
